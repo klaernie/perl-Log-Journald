@@ -44,7 +44,7 @@ use warnings;
 
 require Exporter;
 
-our $VERSION = '0.30';
+our $VERSION = '0.40';
 our @ISA = qw/Exporter/;
 our @EXPORT_OK = qw/journal_log send sendv/;
 our @EXPORT = qw/journal_log send sendv/;
