@@ -19,12 +19,12 @@ my $libsystemd_journal_LDFLAGS = `pkg-config --libs $libpath`
 my $build = Module::Build->new(
 	module_name		=> 'Log::Journald',
 	license			=> 'perl',
-	dist_author		=> 'Lubomir Rintel <lkundrak@v3.sk>',
+	dist_author		=> 'Andre Klärner <kandre@ak-online.be>',
 	create_readme		=> 1,
 	meta_merge		=> {
 		resources	=> {
-			bugtracker	=> 'http://rt.cpan.org/NoAuth/Bugs.html?Dist=Log-Journald',
-			repository	=> 'https://github.com/lkundrak/perl-Log-Journald',
+			bugtracker	=> 'https://github.com/klaernie/perl-Log-Journald/issues',
+			repository	=> 'https://github.com/klaernie/perl-Log-Journald',
 		}
 	},
 	extra_compiler_flags	=> $libsystemd_journal_CFLAGS,
