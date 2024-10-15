@@ -22,6 +22,7 @@ my $build = Module::Build->new(
 	license			=> 'perl',
 	dist_author		=> 'Andre Klärner <kandre@ak-online.be>',
 	create_readme		=> 1,
+	create_makefile_pl	=> 'small',
 	meta_merge		=> {
 		resources	=> {
 			bugtracker	=> 'https://github.com/klaernie/perl-Log-Journald/issues',
