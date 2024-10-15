@@ -8,3 +8,4 @@ lib/Log/Log4perl/Appender/Journald.pm	Log::Log4perl appender
 META.yml
 META.json
 README
+Makefile.PL
