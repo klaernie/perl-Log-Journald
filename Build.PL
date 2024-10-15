@@ -1,5 +1,6 @@
 use strict;
 use warnings;
+use utf8;
 
 use Module::Build;
 
@@ -24,7 +25,11 @@ my $build = Module::Build->new(
 	meta_merge		=> {
 		resources	=> {
 			bugtracker	=> 'https://github.com/klaernie/perl-Log-Journald/issues',
-			repository	=> 'https://github.com/klaernie/perl-Log-Journald',
+			repository	=> {
+				web => 'https://github.com/klaernie/perl-Log-Journald',
+				url => 'https://github.com/klaernie/perl-Log-Journald.git',
+				type => 'git',
+			},
 		}
 	},
 	extra_compiler_flags	=> $libsystemd_journal_CFLAGS,
